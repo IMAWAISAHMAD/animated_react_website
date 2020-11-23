@@ -1,0 +1,38 @@
+/*-------------Header Styles------------*/
+.navbar{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height:70px
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar a{
+        color:var(--text-color);
+        padding:10px;
+        margin:0 5px;
+    }
+    .navbar a:hover{
+        border-bottom:2px solid var(--text-color);
+    }
+    .navbar .flex{
+        justify-content: space-between;
+    }
+
+
+/*For Mobile Screen*/
+@media(max-width:500px){
+.navbar{
+    height:110px;
+}
+.navbar .flex{
+    flex-direction: column;
+}
+.navbar ul {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.navbar a:hover{
+    font-weight:bold
+}
+}

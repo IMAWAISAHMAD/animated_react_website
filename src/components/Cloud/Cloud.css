@@ -1,0 +1,13 @@
+.cloud .grid{
+    grid-template-columns: 4fr 3fr;
+}
+.cloud{
+    animation:slidInFromRight 2s ease-in;
+}
+
+@media(max-width:768px){
+    .cloud .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
